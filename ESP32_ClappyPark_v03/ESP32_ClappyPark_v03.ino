@@ -6,12 +6,12 @@
 #include "ClappyPark_v03.h"
 
 #include <Wire.h>
-#include "SSD1306.h" // alias for `#include "SSD1306Wire.h"`
+//#include "SSD1306.h" // alias for `#include "SSD1306Wire.h"`
 
 #include <Adafruit_NeoPixel.h>
 #define NEO_NUM 12
 
-SSD1306  display(0x3c, I2CSDA, I2CSCL);
+//SSD1306  display(0x3c, I2CSDA, I2CSCL);
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NEO_NUM, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -417,17 +417,17 @@ void setup() {
       pixels.show(); // This sends the updated pixel color to the hardware.
     }
 
-  // Initialising the UI will init the display too.
-  display.init();
-
-  display.flipScreenVertically();
-  
-  display.setFont(ArialMT_Plain_16);
-  display.drawString(20, 20, "Clappy Park");
-
-  display.setFont(ArialMT_Plain_10);
-  display.drawString(60, 50, "Setup done");
-  display.display();
+//  // Initialising the UI will init the display too.
+//  display.init();
+//
+//  display.flipScreenVertically();
+//  
+//  display.setFont(ArialMT_Plain_16);
+//  display.drawString(20, 20, "Clappy Park");
+//
+//  display.setFont(ArialMT_Plain_10);
+//  display.drawString(60, 50, "Setup done");
+//  display.display();
 
   Serial.println( "Setup done");
   Serial.println( "*** Welcome to Clappy Park! ***");
