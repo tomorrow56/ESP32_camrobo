@@ -1,5 +1,12 @@
 # Step.1 リモコンロボット化
 
+
+## Overview
+
+ベースとなるカムプログラムロボットにESP32Camrobo基盤を搭載して、スマートフォンからBLEで制御できるロボットに改造します。  
+この工作は、他の全ての工作の元となります。  
+
+
 ## 部品の準備
 
 - 以下の部品を購入します。
@@ -8,6 +15,7 @@
         - [ユニバーサルプレート](http://www.tamiya.com/japan/products/70098/index.html) & [3mmプッシュリベットセット](http://www.tamiya.com/japan/products/70155/index.html)
         - [ユニバーサルプレート （2枚セット）](http://www.tamiya.com/japan/products/70157/index.html)
     - [電池ボックス　単３×４本　リード線・背中合わせ BH-343-3A](http://akizukidenshi.com/catalog/g/gP-02678/)
+    - タッピング Aナベ 2x5mm ビス　2本
 - 3Dプリンタでパーツを出力します。
     - [電池ボックスホルダー](../../3d_parts/battery-holder.stl)
 

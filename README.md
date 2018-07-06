@@ -1,6 +1,6 @@
 # ESP32_camrobo
 
-
+![ESP32Camrobo board](./docs/res/board_overview.jpg)
 
 ## Overview
 
@@ -33,9 +33,13 @@ Arduino の **ライブラリマネージャ** から以下のライブラリを
 
 ## カムプログラムロボットの改造
 
-ESP32Camroboをカムプログラムロボットに搭載し、改造する方法について。
+ESP32Camroboをカムプログラムロボットに搭載し、改造する方法について解説しています。  
 
 - [カムロボットの工作](./docs/make_robot/README.md)
+
+![Camrobo Step3](docs/res/step3_overview.jpg)  
+
+*作成例(Step3)*
 
 
 
