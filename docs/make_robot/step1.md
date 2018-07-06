@@ -27,29 +27,78 @@
 
 ## 組立て
 
-1. カムプログラムロボットを一旦組み立てます。
-2. ユニバーサルプレートの中央にESP32Camrobo基盤を固定します。
-    - アンテナ側が前方に来るようにします。
-    - プッシュリベットを使用して固定します。
-3. ESP32Camrobo基盤に配線します。
-    - カムプログラムロボットのモーターを `MotorLeft`, `MotorRight` ターミナルに接続します。
-    - 電池ボックスを `+5V`, `GND` ピンに接続します。
-        - 適宜、QIコネクタ等を使用してください。
-        - 間に、カムプログラムロボットに付属のスイッチを挟むと操作がしやすくなります。
-4. 電池ボックスホルダーをカムプログラムロボットに固定し、電池ボックスを格納します。
+### 1. ユニバーサルプレートの固定
+
+カムプログラムロボットを一旦組み立てます。  
+カムプログラムロボットの説明書を参考に、ユニバーサルプレートを設置します。  
+
+![](../res/step1_addboard1.jpg)
+
+![](../res/step1_addboard2.jpg)
+
+**固定位置に注意してください。写真を参考に、後方に10穴分余るようにしてください。**
+
+
+### 2. ESP32Camrobo基盤の設置
+
+ユニバーサルプレートの中央にESP32Camrobo基盤を固定します。  
+
+- アンテナ側が前方に来るようにします。
+- プッシュリベットを使用して固定します。
+
+![](../res/step1_addesp32.jpg)
+
+
+ESP32Camrobo基盤にモーターを接続します。  
+
+- カムプログラムロボットのモーターを `MotorLeft`, `MotorRight` ターミナルに接続します。
+- カムプログラムロボットから見て左のモーターを `MotorLeft` に、右のモーターを `MotorRight` に、それぞれ接続します。
+
+![](../res/step1_connectmotor.jpg)
+
+
+
+
+### 3. 電池ボックスの設置
+
+電池ボックスホルダーをカムプログラムロボットに固定します。  
+本体の土台部分に2箇所、ユニバーサルプレートの後方に2箇所、それぞれプッシュリベットを使用して固定します。  
+
+![](../res/step1_addbattery1.jpg)
+
+
+電池ボックスを `+5V`, `GND` ピンに接続します。  
+
+- 適宜、QIコネクタ等を使用してください。
+- 間に、カムプログラムロボットに付属のスイッチを挟むと操作がしやすくなります。
+
+![](../res/step1_wirebattery.jpg)
+
+
+電池ボックスを電池ボックスホルダーに格納します。  
+幅が広い方向を縦にしてください。  
+
+![](../res/step1_addbattery2.jpg)
 
 
 ## プログラムの書き込み
 
-ESP32Camrobo基盤にArduinoでプログラムを書き込みます。
+ESP32Camrobo基盤にArduinoでプログラムを書き込みます。  
+
+[ESP32_ClappyPark](../../ESP32_ClappyPark_v03)  
 
 
 ## 動作確認
 
-リモコンのアプリを開き、接続と操作を試します。  
+リモコンのアプリを端末(スマートフォン or PC)のブラウザ開き、接続と操作を試します。  
 
 - https://crappypark.uzukiaoba.net/
-- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)が使用可能な端末で利用できます。
-    - Chromeがインストールされた Android ５.0以上のAndroid端末
-    - Chromeがインストールされた Macbook, Macbook Pro
-    - Chromeがインストールされ、なおかつBLEをサポートする Windows PC
+
+### リモコンアプリが使用可能な端末について
+
+[Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)が使用可能な端末で利用できます。
+
+- Chromeがインストールされた Android ５.0以上のAndroid端末
+- Chromeがインストールされた Macbook, Macbook Pro
+- Chromeがインストールされ、なおかつBLEをサポートする Windows PC
+
